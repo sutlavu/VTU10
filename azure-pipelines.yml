@@ -15,7 +15,9 @@ steps:
   inputs:
     ConnectionType: 'AzureRM'
     appType: 'webApp'
-    WebAppName: 
+    WebAppName: 'vtu10'
+    deployToSlotOrASE: true
+    SlotName: 'production'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
   inputs:
     mavenPomFile: 'pom.xml'
